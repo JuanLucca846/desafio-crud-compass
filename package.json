@@ -1,0 +1,29 @@
+{
+  "name": "app-api-compass",
+  "version": "1.0.0",
+  "description": "projcompass",
+  "main": "servidor.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/servidor.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/servidor.js\""
+  },
+  "author": "Juan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.7.0",
+    "swagger-jsdoc": "^6.2.7",
+    "swagger-ui-express": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
